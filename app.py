@@ -1,7 +1,7 @@
 from flask  import Flask
 import os
 
-app=lask(__name__)
+app=Flask(__name__)
 
 #récupérsation des ENV
 PORT= os.environ.get("PORT","80")
