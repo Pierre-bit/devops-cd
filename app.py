@@ -1,6 +1,9 @@
-from FLASK  import flask
+from flask  import Flask
+import os
 
-app=flask(__name__)
+app=lask(__name__)
+
+#récupérsation des ENV
 PORT= os.environ.get("PORT","80")
 HOST= os.environ.get("HOST","0.0.0.0")
 
@@ -8,6 +11,12 @@ HOST= os.environ.get("HOST","0.0.0.0")
 
 @app.route("/")
 def hello():
+    '''
+    Fonction appelé pour le chemin par défaut
+
+    Returns:
+        str: un message de la plus grande importance
+    '''
     return "Hello World !"
 
 if __name__== "__main__":
