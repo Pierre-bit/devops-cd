@@ -7,8 +7,13 @@ app=Flask(__name__)
 PORT= os.environ.get("PORT","80")
 HOST= os.environ.get("HOST","0.0.0.0")
 
-def test():
-    pass
+@app.route("/bye")
+def bye():
+    return "Bye"
+
+@app.route("/bonjour")
+def bonjour():
+    return "salut a tous"
 
 @app.route("/")
 def hello():
