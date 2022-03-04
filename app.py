@@ -1,4 +1,4 @@
-from flask  import Flask
+from flask import Flask
 import os
 
 app=Flask(__name__)
@@ -7,7 +7,8 @@ app=Flask(__name__)
 PORT= os.environ.get("PORT","80")
 HOST= os.environ.get("HOST","0.0.0.0")
 
-
+def test():
+    pass
 
 @app.route("/")
 def hello():
