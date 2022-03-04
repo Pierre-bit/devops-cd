@@ -15,6 +15,10 @@ def bye():
 def bonjour():
     return "salut a tous"
 
+@app.route("/test")
+def test():
+    return "test"
+
 @app.route("/")
 def hello():
     '''
